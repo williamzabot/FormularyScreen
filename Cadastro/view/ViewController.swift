@@ -9,9 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        let frameViewPai = self.view.frame
+        let cadastroView = CadastroView(frame: frameViewPai)
+        self.view.addSubview(cadastroView)
     }
 
 
